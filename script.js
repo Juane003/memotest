@@ -31,6 +31,10 @@ const setIcon = () => {
   '<img src="./assets/dark-cover.svg" class="valorant-logo"/>',
   '<img src="./assets/fault-line.svg" class="valorant-logo"/>',
   '<img src="./assets/flashpoint.svg" class="valorant-logo"/>',
+  '<img src="./assets/from-the-shadows.svg" class="valorant-logo"/>',
+  '<img src="./assets/healing-orb.svg" class="valorant-logo"/>',
+  '<img src="./assets/hot-hands.svg" class="valorant-logo"/>',
+  '<img src="./assets/hunters-fury.svg" class="valorant-logo"/>',
   ];
 }
 const memotestTile = (icon, i) => {
