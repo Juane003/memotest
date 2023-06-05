@@ -1,0 +1,102 @@
+* {
+  transition: all 0.7s;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #0a100d;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+div {
+  display: inline-block;
+}
+
+.no-click {
+  pointer-events: none;
+}
+
+.card-area,
+.card,
+.front-face {
+  cursor: pointer;
+  width: 5rem;
+  min-width: 100px;
+  height: 10rem;
+}
+
+.card {
+  backface-visibility: hidden;
+  position: relative;
+  transform-style: preserve-3d;
+  animation: start 5s;
+}
+
+.front-face {
+  position: absolute;
+  backface-visibility: hidden;
+  font-size: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.back-face {
+  background-color: #a22c29;
+  transform: rotateY(180deg);
+}
+
+.superior {
+  background: #b9baa3;
+}
+
+.buttons-container {
+  display: flex;
+  margin-top: 12px;
+  gap: 8px;
+  justify-content: end;
+  align-items: end;
+}
+
+.game-btn {
+  background: #d6d5c9;
+  display: none;
+
+  border-radius: 0.25rem;
+  padding: 5px 20px;
+}
+
+.start {
+  margin-top: 12px;
+  display: block;
+}
+
+.game-btn:hover {
+  background: #a22c29;
+  color: azure;
+}
+
+.valorant-logo {
+  width: 4rem;
+  height: 4rem;
+}
+
+@keyframes start {
+  20%,
+  90% {
+    transform: rotateY(180deg);
+  }
+
+  0%,
+  100% {
+    transform: rotateY(0deg);
+  }
+}
